@@ -66,5 +66,5 @@ Contributions are always welcome! Pull requests, issues, all that stuff, go alre
 
 ### TODO
 * Configure travis CI or any alternative to automatically test and build the code
-* Build and package it.
+* Build and package it
 * Create a project page, or something like that
