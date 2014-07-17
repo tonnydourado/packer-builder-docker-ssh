@@ -58,7 +58,7 @@ The reference of available configuration options is listed below.
 ### Optional parameters:
 
  * `pull` (boolean) - If true, the configured image will be pulled using docker pull prior to use. Otherwise, it is assumed the image already exists and can be used. This defaults to true if not set.
- * `run_command` (array of strings) - An array of arguments to pass to `docker` in order to run the container. By default this is set to `["run", "-d", "-i", "-t", "-v", "{{.Volumes}}", "{{.Image}}", "/bin/bash"]`. As you can see, you have a couple template variables to customize, as well.
+ * `run_command` (array of strings) - An array of arguments to pass to `docker` in order to run the container. By default this is set to `["run", "-d", "-v", "{{.Volumes}}", "{{.Image}}", "/sbin/init"]`. As you can see, you have a couple template variables to customize, as well.
 
 ## Contribute
 
