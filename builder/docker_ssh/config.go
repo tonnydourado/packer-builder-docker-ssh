@@ -68,8 +68,11 @@ func NewConfig(raws ...interface{}) (*Config, []string, error) {
     errs := common.CheckUnusedConfig(md)
 
     templates := map[string]*string{
-        "export_path": &c.ExportPath,
-        "image":       &c.Image,
+        "export_path":          &c.ExportPath,
+        "image":                &c.Image,
+        "ssh_username":         &c.SSHUsername,
+        "ssh_password":         &c.SSHPassword,
+        "ssh_private_key_file": &c.SSHPrivateKeyFile,
     }
 
     for n, ptr := range templates {
