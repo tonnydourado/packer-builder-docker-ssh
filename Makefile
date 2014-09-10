@@ -26,7 +26,7 @@ deps: gopath
 	--volumes-from gopath \
 	-m=1g \
 	google/golang \
-	/bin/bash -c 'go get -u github.com/mitchellh/gox && go get github.com/mitchellh/packer && cd /gopath/src/github.com/mitchellh/packer && make deps'
+	/bin/bash -c 'go get -u github.com/mitchellh/gox && go get github.com/mitchellh/packer && cd /gopath/src/github.com/mitchellh/packer && git checkout v0.6.0 && make deps'
 
 test: deps
 	@$(ECHO) "$(OK_COLOR)==> Testing plugin...$(NO_COLOR)"
