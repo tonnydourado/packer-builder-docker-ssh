@@ -68,3 +68,4 @@ Contributions are always welcome! Pull requests, issues, all that stuff, go alre
 * Configure travis CI or any alternative to automatically test and build the code
 * Build and package it
 * Create a project page, or something like that
+* Right now, it only works (for sure, at least) with Packer v0.6.0 and Docker 1.1.2.
